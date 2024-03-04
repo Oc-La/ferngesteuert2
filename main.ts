@@ -1,5 +1,5 @@
 input.onGesture(Gesture.TiltRight, function () {
-    radio.sendNumber(1)
+	
 })
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 0) {
@@ -18,22 +18,34 @@ function geradeaus () {
 function anhalten () {
     maqueen.motorStop(maqueen.Motors.All)
 }
+input.onButtonEvent(Button.AB, input.buttonEventValue(ButtonEvent.Up), function () {
+    radio.sendNumber(3)
+})
 input.onGesture(Gesture.ScreenDown, function () {
-    radio.sendNumber(2)
+	
 })
 function links () {
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
-    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 51)
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 51)
 }
 function rechts () {
-    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 100)
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 100)
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 51)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 51)
 }
 input.onGesture(Gesture.TiltLeft, function () {
+	
+})
+input.onButtonEvent(Button.A, input.buttonEventValue(ButtonEvent.Hold), function () {
     radio.sendNumber(0)
 })
+input.onButtonEvent(Button.B, input.buttonEventValue(ButtonEvent.Hold), function () {
+    radio.sendNumber(1)
+})
 input.onGesture(Gesture.ScreenUp, function () {
-    radio.sendNumber(3)
+	
+})
+input.onButtonEvent(Button.AB, input.buttonEventValue(ButtonEvent.Hold), function () {
+    radio.sendNumber(2)
 })
 radio.setGroup(1)
 maqueen.writeLED(maqueen.Led.LedAll, maqueen.LedSwitch.LedOn)
