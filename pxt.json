@@ -5,7 +5,7 @@
         "core": "*",
         "motion-kit": "github:tinysuperlab/motionkitv2#7c4f5fed7113002ade5d38f0e457577ce0e4dc8b",
         "radio": "*",
-        "v2": "*"
+        "v3": "*"
     },
     "files": [
         "main.blocks",
