@@ -25,12 +25,12 @@ input.onGesture(Gesture.ScreenDown, function () {
 	
 })
 function links () {
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 51)
-    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 51)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 50)
 }
 function rechts () {
-    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 51)
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 51)
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 50)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 50)
 }
 input.onGesture(Gesture.TiltLeft, function () {
 	
