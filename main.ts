@@ -36,3 +36,4 @@ input.onGesture(Gesture.ScreenUp, function () {
     radio.sendNumber(3)
 })
 radio.setGroup(1)
+maqueen.writeLED(maqueen.Led.LedAll, maqueen.LedSwitch.LedOn)
